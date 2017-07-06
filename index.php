@@ -12,7 +12,11 @@
         <section class="places cf">
             <div class="grid-fixed">
                 <div class="c12 cf">
-                    <p>Something cool here...</p>
+                    <form action="" method="post">
+                        <input type="text" name="name" id="name" placeholder="Your Name">
+                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                        <textarea name="area" id="area" rows="60" cols="30"></textarea>
+                    </form>
                 </div>
             </div>
         </section>
