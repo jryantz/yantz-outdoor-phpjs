@@ -11,13 +11,23 @@
 
         <section class="places cf">
             <div class="grid-fixed">
-                <div class="c12 cf">
-                    <form action="" method="post">
+                <form action="" method="post">
+                    <div class="c12 cf">
                         <input type="text" name="name" id="name" placeholder="Your Name">
+                    </div>
+
+                    <div class="c12 cf">
                         <input type="text" name="subject" id="subject" placeholder="Subject">
-                        <textarea name="area" id="area" rows="60" cols="30"></textarea>
-                    </form>
-                </div>
+                    </div>
+
+                    <div class="c12 cf">
+                        <textarea name="area" id="area" rows="10" cols="100"></textarea>
+                    </div>
+
+                    <div class="c12 cf">
+                        <input type="submit" name="submit" value="Submit">
+                    </div>
+                </form>
             </div>
         </section>
 
