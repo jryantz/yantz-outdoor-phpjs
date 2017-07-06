@@ -37,12 +37,12 @@
         var name = document.getElementById('name');
         var subject = document.getElementById('subject');
 
-        name.onKeyDown(function() {
-            console.log('name down');
+        name.onchange(function() {
+            console.log('name change');
         });
 
-        subject.onKeyDown(function() {
-            console.log('name down');
+        subject.onchange(function() {
+            console.log('subject change');
         });
         </script>
     </body>
