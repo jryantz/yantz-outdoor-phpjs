@@ -13,11 +13,11 @@
             <div class="grid-fixed">
                 <form action="" method="post">
                     <div class="c12 cf" style="margin-bottom: 15px;">
-                        <input type="text" name="name" id="name" placeholder="Your Name" style="padding: 5px;" onchange="check();"><span style="color: red;"> *</span>
+                        <input type="text" name="name" id="name" placeholder="Your Name" style="padding: 5px;" onkeyup="check();"><span style="color: red;"> *</span>
                     </div>
 
                     <div class="c12 cf" style="margin-bottom: 15px;">
-                        <input type="text" name="subject" id="subject" placeholder="Subject" style="padding: 5px;" onchange="check();"><span style="color: red;"> *</span>
+                        <input type="text" name="subject" id="subject" placeholder="Subject" style="padding: 5px;" onkeyup="check();"><span style="color: red;"> *</span>
                     </div>
 
                     <div class="c12 cf" style="margin-bottom: 15px;">
