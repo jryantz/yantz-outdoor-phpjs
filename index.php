@@ -43,7 +43,9 @@
 
             if(name.value != '' && subject.value != '') {
                 document.getElementById('submit').removeAttribute("disabled");
-            } else {
+            }
+
+            if(name.value == '' || subject.value == '') {
                 document.getElementById('submit').setAttribute("disabled", "");
             }
         }
