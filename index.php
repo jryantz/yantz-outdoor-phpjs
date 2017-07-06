@@ -45,7 +45,11 @@
                 document.getElementById('submit').removeAttribute("disabled");
             }
 
-            if(name.value == '' || subject.value == '') {
+            if(name.value == '') {
+                document.getElementById('submit').setAttribute("disabled", "");
+            }
+
+            if(subject.value == '') {
                 document.getElementById('submit').setAttribute("disabled", "");
             }
         }
