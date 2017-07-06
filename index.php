@@ -38,6 +38,9 @@
         var subject = document.getElementById('subject');
 
         function check() {
+            console.log(name);
+            console.log(subject);
+
             if(name.value != '' && subject.value != '') {
                 document.getElementById('submit').setAttribute("disabled", "false");
             } else {
