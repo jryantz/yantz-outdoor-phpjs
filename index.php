@@ -13,11 +13,11 @@
             <div class="grid-fixed">
                 <form action="" method="post">
                     <div class="c12 cf" style="margin-bottom: 15px;">
-                        <input type="text" name="name" id="name" placeholder="Your Name" style="padding: 5px;"><span style="color: red;"> *</span>
+                        <input type="text" name="name" id="name" placeholder="Your Name" style="padding: 5px;" onchange="check();"><span style="color: red;"> *</span>
                     </div>
 
                     <div class="c12 cf" style="margin-bottom: 15px;">
-                        <input type="text" name="subject" id="subject" placeholder="Subject" style="padding: 5px;"><span style="color: red;"> *</span>
+                        <input type="text" name="subject" id="subject" placeholder="Subject" style="padding: 5px;" onchange="check();"><span style="color: red;"> *</span>
                     </div>
 
                     <div class="c12 cf" style="margin-bottom: 15px;">
@@ -25,7 +25,7 @@
                     </div>
 
                     <div class="c12 cf">
-                        <input type="submit" name="submit" value="Submit" disabled>
+                        <input type="submit" name="submit" id="submit" value="Submit" disabled>
                     </div>
                 </form>
             </div>
@@ -37,13 +37,13 @@
         var name = document.getElementById('name');
         var subject = document.getElementById('subject');
 
-        name.onchange(function() {
-            console.log('name change');
-        });
-
-        subject.onchange(function() {
-            console.log('subject change');
-        });
+        function check() {
+            if(name.value != '' && subject.value != '') {
+                document.getElementById('submit').setAttribute("disabled", "false");
+            } else {
+                document.getElementById('submit').setAttribute("disabled", "true");
+            }
+        }
         </script>
     </body>
 </html>
