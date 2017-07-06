@@ -32,5 +32,18 @@
         </section>
 
         <?php require_once 'includes/footer.inc.php'; ?>
+
+        <script>
+        var name = document.getElementById('name');
+        var subject = document.getElementById('subject');
+
+        name.onKeyDown(function() {
+            console.log('name down');
+        });
+
+        subject.onKeyDown(function() {
+            console.log('name down');
+        });
+        </script>
     </body>
 </html>
