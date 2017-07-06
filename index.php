@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Yantz Outdoor Collection</title>
-        <link rel="stylesheet" href="static/app.css" type="text/css" media="screen" charset="utf-8"/>
+        <link rel="stylesheet" href="css/app.css" type="text/css" media="screen" charset="utf-8">
     </head>
 
     <body>
