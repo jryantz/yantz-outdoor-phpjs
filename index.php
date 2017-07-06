@@ -44,7 +44,7 @@
             if(name.value != '' && subject.value != '') {
                 document.getElementById('submit').removeAttribute("disabled");
             } else {
-                document.getElementById('submit').setAttribute("disabled");
+                document.getElementById('submit').setAttribute("disabled", "");
             }
         }
         </script>
