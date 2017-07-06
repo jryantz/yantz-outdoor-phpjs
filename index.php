@@ -12,15 +12,15 @@
         <section class="places cf">
             <div class="grid-fixed">
                 <form action="" method="post">
-                    <div class="c12 cf" style="margin: 5px;">
+                    <div class="c12 cf" style="margin-bottom: 15px;">
                         <input type="text" name="name" id="name" placeholder="Your Name" style="padding: 5px;">
                     </div>
 
-                    <div class="c12 cf">
+                    <div class="c12 cf" style="margin-bottom: 15px;">
                         <input type="text" name="subject" id="subject" placeholder="Subject" style="padding: 5px;">
                     </div>
 
-                    <div class="c12 cf">
+                    <div class="c12 cf" style="margin-bottom: 15px;">
                         <textarea name="area" id="area" rows="10" cols="100" style="padding: 5px;"></textarea>
                     </div>
 
