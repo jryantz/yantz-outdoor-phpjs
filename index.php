@@ -13,7 +13,7 @@
             <div class="grid-fixed">
                 <form action="" method="post">
                     <div class="c12 cf" style="margin-bottom: 15px;">
-                        <input type="text" name="name" id="name" placeholder="Your Name" style="padding: 5px;" onkeyup="check();"><span style="color: red;"> *</span>
+                        <input type="text" name="user" id="user" placeholder="Your Name" style="padding: 5px;" onkeyup="check();"><span style="color: red;"> *</span>
                     </div>
 
                     <div class="c12 cf" style="margin-bottom: 15px;">
@@ -34,7 +34,7 @@
         <?php require_once 'includes/footer.inc.php'; ?>
 
         <script>
-        var name = document.getElementById('name');
+        var name = document.getElementById('user');
         var subject = document.getElementById('subject');
 
         function check() {
