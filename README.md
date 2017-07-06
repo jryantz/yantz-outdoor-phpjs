@@ -4,7 +4,7 @@ This app is a project for my Web Development I class for my Masters in Applied C
 
 ## PHP version
 
-* ...
+* >= 5.5
 
 ## System dependencies
 
