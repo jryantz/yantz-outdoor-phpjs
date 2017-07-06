@@ -12,7 +12,7 @@
         <section class="places cf">
             <div class="grid-fixed">
                 <form action="" method="post">
-                    <div class="c12 cf">
+                    <div class="c12 cf" style="margin: 5px;">
                         <input type="text" name="name" id="name" placeholder="Your Name" style="padding: 5px;">
                     </div>
 
@@ -25,7 +25,7 @@
                     </div>
 
                     <div class="c12 cf">
-                        <input type="submit" name="submit" value="Submit">
+                        <input type="submit" name="submit" value="Submit" disabled>
                     </div>
                 </form>
             </div>
