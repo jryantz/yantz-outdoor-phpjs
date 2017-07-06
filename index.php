@@ -13,15 +13,15 @@
             <div class="grid-fixed">
                 <form action="" method="post">
                     <div class="c12 cf">
-                        <input type="text" name="name" id="name" placeholder="Your Name">
+                        <input type="text" name="name" id="name" placeholder="Your Name" style="padding: 5px;">
                     </div>
 
                     <div class="c12 cf">
-                        <input type="text" name="subject" id="subject" placeholder="Subject">
+                        <input type="text" name="subject" id="subject" placeholder="Subject" style="padding: 5px;">
                     </div>
 
                     <div class="c12 cf">
-                        <textarea name="area" id="area" rows="10" cols="100"></textarea>
+                        <textarea name="area" id="area" rows="10" cols="100" style="padding: 5px;"></textarea>
                     </div>
 
                     <div class="c12 cf">
