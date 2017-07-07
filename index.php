@@ -1,6 +1,34 @@
+<?php
+session_start();
+
+if(isset($_POST['submit'])) {
+    $to = 'jryantz0@frostburg.edu';
+    $subject = $_POST['subject'];
+    $message = wordwrap($_POST['area'], 70);
+
+    if(isset($_POST['reply'])) {
+        $header = "From: mailer@yantznet.com" . "\r\n" . "Reply-To: {$_POST['reply']}" . "X-Mailer: PHP/" . phpversion();
+    } else {
+        $header = "From: mailer@yantznet.com" . "\r\n" . "Reply-To: mailer@yantznet.com" . "X-Mailer: PHP/" . phpversion();
+    }
+
+    if(isset($subject)) {
+        $success = mail($to, $subject, $message, $header);
+
+        if(!$success) {
+            $error = error_get_last()['message'];
+            echo $error;
+        } else {
+            echo 'Email sent.';
+        }
+    }
+}
+
+?>
+
 <html>
     <head>
-        <title>Yantz Outdoor Collection</title>
+        <title>Contact Yantz Outdoor Collection</title>
         <link rel="stylesheet" href="css/app.css" type="text/css" media="screen" charset="utf-8">
     </head>
 
@@ -13,7 +41,11 @@
             <div class="grid-fixed">
                 <form action="" method="post">
                     <div class="c12 cf" style="margin-bottom: 15px;">
-                        <input type="text" name="user" id="user" placeholder="Your Name" style="padding: 5px;" onkeyup="check();"><span style="color: red;"> *</span>
+                        <input type="text" name="name" id="name" placeholder="Your Name" style="padding: 5px;" onkeyup="check();"><span style="color: red;"> *</span>
+                    </div>
+
+                    <div class="c12 cf" style="margin-bottom: 15px;">
+                        <input type="text" name="reply" id="reply" placeholder="Reply Email" style="padding: 5px;"><span style="color: red;"> *</span>
                     </div>
 
                     <div class="c12 cf" style="margin-bottom: 15px;">
@@ -34,22 +66,16 @@
         <?php require_once 'includes/footer.inc.php'; ?>
 
         <script>
-        var name = document.getElementById('user');
+        var uname = document.getElementById('name');
+        var reply = document.getElementById('reply');
         var subject = document.getElementById('subject');
 
         function check() {
-            console.log(name);
-            console.log(subject);
-
-            if(name.value != '' && subject.value != '') {
+            if(uname.value !== '' && reply.value !== '' && subject.value !== '') {
                 document.getElementById('submit').removeAttribute("disabled");
             }
 
-            if(name.value == '' || subject.value == '') {
-                document.getElementById('submit').setAttribute("disabled", "");
-            }
-
-            if(subject.value == '') {
+            if(uname.value === '' || reply.value === '' || subject.value === '') {
                 document.getElementById('submit').setAttribute("disabled", "");
             }
         }
